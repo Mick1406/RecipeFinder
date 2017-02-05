@@ -34,13 +34,3 @@ class LinkFinder(HTMLParser):
 
     def error(self, message):
         pass
-
-
-# expand to diplay page or part o it - create its own class
-class TextFinder(HTMLParser):
-
-    def __init__(self, base_url, page_url):
-        super.__init__()
-        self.base_url = base_url
-        self.page_url = page_url
-        self.links = set()
